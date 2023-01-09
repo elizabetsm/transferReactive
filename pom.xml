@@ -36,14 +36,13 @@
             <artifactId>spring-boot-starter-webflux</artifactId>
             <version>3.0.0</version>
             <!-- иначе все лочится -->
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-logging</artifactId>
-                </exclusion>
-            </exclusions>
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>org.springframework.boot</groupId>-->
+<!--                    <artifactId>spring-boot-starter-logging</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
         </dependency>
-
         <!--        database r2 dependency-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -62,12 +61,14 @@
         <!--            <version>42.5.1</version>-->
         <!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>org.projectlombok</groupId>-->
-<!--            <artifactId>lombok</artifactId>-->
-<!--            <version>1.18.24</version>-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
 <!--            <scope>provided</scope>-->
-<!--        </dependency>-->
+        </dependency>
+
+
 
 
         <!-- to fix compatible versions of the classes reactor.netty.transport.ServerTransport$DisposableBind

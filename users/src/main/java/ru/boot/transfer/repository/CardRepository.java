@@ -1,8 +1,8 @@
-package transfer.repository;
+package ru.boot.transfer.repository;
 
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import reactor.core.publisher.Flux;
-import transfer.entity.Card;
+import ru.boot.transfer.entity.Card;
 
 import java.util.UUID;
 

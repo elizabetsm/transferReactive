@@ -1,4 +1,5 @@
 transfer/entity/Card.class
 transfer/repository/CardRepository.class
-transfer/Application.class
+transfer/CardsApplication.class
+transfer/service/CardService.class
 transfer/controller/CardController.class

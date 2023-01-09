@@ -5,3 +5,13 @@ spring:
     password: java
     pool:
       enabled: true
+  jpa:
+    defer-datasource-initialization: true
+feign:
+  client:
+    config:
+      client:
+        options:
+          readTimeoutMillis: 2000
+          writeTimeoutMillis: 2000
+          responseTimeoutMillis: 2000

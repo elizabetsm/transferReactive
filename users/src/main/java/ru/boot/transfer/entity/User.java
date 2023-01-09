@@ -1,41 +1,26 @@
 package ru.boot.transfer.entity;
 
-//import lombok.AllArgsConstructor;
-//import lombok.Getter;
-//import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.relational.core.mapping.Table;
 
-import java.util.UUID;
+import java.util.List;
 
-//@Getter
-//@AllArgsConstructor
-//@NoArgsConstructor
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "users")
 public class User {
-
-    public User(){}
-
-    public User(Integer id, String name, int age) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-    }
-
     @Id
+    @GeneratedVal
     Integer id;
     String name;
     int age;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
+    @Transient
+    @Setter
+    List<Card> cardList;
 }
